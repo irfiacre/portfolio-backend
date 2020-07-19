@@ -1,0 +1,50 @@
+{
+  "name": "portfolio-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run createTables && babel-node server.js",
+    "dev": "npm run createTables && nodemon --exec babel-node server.js",
+    "createTables": "babel-node ./server/models/createTables.js",
+    "testTables": "  babel-node ./server/models/testTables",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfiacre/portfolio-backend.git"
+  },
+  "author": "irfiacre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/irfiacre/portfolio-backend/issues"
+  },
+  "homepage": "https://github.com/irfiacre/portfolio-backend#readme",
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/register": "^7.9.0",
+    "@hapi/joi": "^17.1.1",
+    "babel-eslint": "^10.1.0",
+    "babel-register": "^6.26.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.6",
+    "nodemon": "^2.0.2",
+    "path": "^0.12.7",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0"
+  }
+}

@@ -1,0 +1,94 @@
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+export default () =>{
+
+    const template = `<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Karla|Lato|Nunito|Raleway|Rubik&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/da7b84dcbd.js" crossorigin="anonymous"></script>
+        <title>Document</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .temp{
+                font-family: lato,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+                font-size: 18px;
+            }
+            .background{
+                height: 35vh;
+                background-color: #0A71C6;
+                text-align: center;
+                padding-top: 4vh;
+                }
+            .all{
+                position: relative;
+                padding: 10px;
+                text-align: center;
+            }    
+            #logo{
+                    border-radius: 50%;
+                    height: 100px;
+                    border: 2px solid white;
+                }
+            .logo p{
+                    margin-top: 10vh;
+                }
+            h2{
+                    color: white;
+                    margin-top: 4vh;
+                    
+                }
+            table{
+                    line-height: 2;
+                }
+            .content{
+                font-size: 16px;
+                padding: 10px;
+                line-height: 1.7;
+            }
+            .details{
+                line-height: 1.5;
+                margin-top: 3vh;
+            }
+            .det{
+                text-align: center;
+            }
+            .td{
+                padding-right: 20px;
+                width: 100%;
+            }
+    
+        </style>
+    </head>
+    <body >
+        <div class="temp">
+            <div class="background">
+                <div class="logo">
+                    <img id="logo" src="https://avatars3.githubusercontent.com/u/52471122?s=460&u=ceee0d23c015abe724b7ca28dcea15b7cf94f99b&v=4" alt="logo">
+                    <h2>Thank you for getting in touch.</h2>
+                </div>
+            </div>
+            <div class="all">
+                   <p >This email is to confirm that I, IRADUKUNDA Allelua Fiacre, have received your message and will reply to it.</p>
+                    <div class="content">    
+                        <p> 
+                        </p><br>
+                        <hr>
+                        <p>Have a nice day.</p>
+                    </div>
+            </div>
+            
+    
+        </div> 
+    </body>
+    </html>`;
+
+    return template;
+}
